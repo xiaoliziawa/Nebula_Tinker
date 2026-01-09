@@ -1,0 +1,12 @@
+{
+	"message.nebula_tinker.modifier.acupoint": "the skill Deadly Acupoint has activated",
+	"modifier.nebula_tinker.acupoint": "Deadly Acupoint",
+	"modifier.nebula_tinker.acupoint.flavor": "You are below the Killing Line!",
+	"modifier.nebula_tinker.acupoint.description": "Have chance to kill monsters below 25% health directly (activate on Bosses below 12.5% health)",
+	"modifier.nebula_tinker.frenzy": "Frenzy",
+	"modifier.nebula_tinker.frenzy.flavor": "Speed is also my battery",
+	"modifier.nebula_tinker.frenzy.description": "Player will gain health when attacking with a Speed buff",
+	"modifier.nebula_tinker.causal_truncation": "Causal Truncation",
+	"modifier.nebula_tinker.causal_truncation.flavor": "Severing the cause",
+	"modifier.nebula_tinker.causal_truncation.description": "Having chance to damage 33% total health to target"
+}

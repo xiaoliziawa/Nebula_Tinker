@@ -1,0 +1,11 @@
+{
+	"nebula_tinker:acupoint": [
+		"nebula_tinker:gui/modifiers/acupoint"
+	],
+	"nebula_tinker:causal_truncation": [
+		"nebula_tinker:gui/modifiers/causal_truncation"
+	],
+	"nebula_tinker:frenzy": [
+		"nebula_tinker:gui/modifiers/frenzy"
+	]
+}
