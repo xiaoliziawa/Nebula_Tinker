@@ -1,0 +1,14 @@
+{
+  "type": "nebula_tinker:causal_truncation",
+  "allow_crystal": true,
+  "level_display": {
+    "color": "blue",
+    "border_color": "dark_blue"
+  },
+  "slots": {
+    "upgrades": 3
+  },
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  }
+}

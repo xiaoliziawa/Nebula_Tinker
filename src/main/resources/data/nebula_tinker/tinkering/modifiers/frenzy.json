@@ -1,0 +1,14 @@
+{
+  "type": "nebula_tinker:frenzy",
+  "allow_crystal": true,
+  "level_display": {
+    "color": "green",
+    "border_color": "dark_green"
+  },
+  "slots": {
+    "upgrades": 2
+  },
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  }
+}

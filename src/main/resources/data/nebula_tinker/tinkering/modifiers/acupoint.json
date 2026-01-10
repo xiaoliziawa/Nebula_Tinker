@@ -1,0 +1,14 @@
+{
+  "type": "nebula_tinker:acupoint",
+  "allow_crystal": true,
+  "level_display": {
+    "color": "light_purple",
+    "border_color": "dark_purple"
+  },
+  "slots": {
+    "upgrades": 2
+  },
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  }
+}

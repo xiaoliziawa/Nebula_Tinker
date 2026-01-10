@@ -6,20 +6,24 @@ import top.nebula.nebula_tinker.NebulaTinker;
 import top.nebula.nebula_tinker.common.modifier.*;
 
 public class ModModifier {
-	public static final ModifierDeferredRegister MODIFIERS;
-	public static final StaticModifier<Acupoint> ACUPOINT;
-	public static final StaticModifier<Frenzy> FRENZY;
-	public static final StaticModifier<CausalTruncation> CAUSAL_TRUNCATION;
-	public static final StaticModifier<RapidShot> RAPID_SHOT;
-	public static final StaticModifier<Abuser> ABUSER;
+    public static final ModifierDeferredRegister MODIFIERS;
+    public static final StaticModifier<Acupoint> ACUPOINT;
+    public static final StaticModifier<Frenzy> FRENZY;
+    public static final StaticModifier<CausalTruncation> CAUSAL_TRUNCATION;
+    public static final StaticModifier<RapidShot> RAPID_SHOT;
+    public static final StaticModifier<Abuser> ABUSER;
+    public static final StaticModifier<DivinizationModifier> DIVINIZATION;
+    public static final StaticModifier<DemonizationModifier> DEMONIZATION;
 
-	static {
-		MODIFIERS = ModifierDeferredRegister.create(NebulaTinker.MODID);
+    static {
+        MODIFIERS = ModifierDeferredRegister.create(NebulaTinker.MODID);
 
-		ACUPOINT = MODIFIERS.register("acupoint", Acupoint::new);
-		FRENZY = MODIFIERS.register("frenzy", Frenzy::new);
-		CAUSAL_TRUNCATION = MODIFIERS.register("causal_truncation", CausalTruncation::new);
-		RAPID_SHOT = MODIFIERS.register("rapid_shot", RapidShot::new);
-		ABUSER = MODIFIERS.register("abuser", Abuser::new);
-	}
+        ACUPOINT = MODIFIERS.register("acupoint", Acupoint::new);
+        FRENZY = MODIFIERS.register("frenzy", Frenzy::new);
+        CAUSAL_TRUNCATION = MODIFIERS.register("causal_truncation", CausalTruncation::new);
+        RAPID_SHOT = MODIFIERS.register("rapid_shot", RapidShot::new);
+        ABUSER = MODIFIERS.register("abuser", Abuser::new);
+        DIVINIZATION = MODIFIERS.register("divinization", DivinizationModifier::new);
+        DEMONIZATION = MODIFIERS.register("demonization", DemonizationModifier::new);
+    }
 }

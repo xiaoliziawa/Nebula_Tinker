@@ -1,0 +1,14 @@
+{
+  "type": "nebula_tinker:divinization",
+  "allow_crystal": true,
+  "level_display": {
+    "color": "gold",
+    "border_color": "yellow"
+  },
+  "slots": {
+    "upgrades": 3
+  },
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  }
+}

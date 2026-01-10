@@ -1,0 +1,14 @@
+{
+  "type": "nebula_tinker:demonization",
+  "allow_crystal": true,
+  "level_display": {
+    "color": "dark_red",
+    "border_color": "red"
+  },
+  "slots": {
+    "upgrades": 3
+  },
+  "tools": {
+    "tag": "tconstruct:modifiable"
+  }
+}

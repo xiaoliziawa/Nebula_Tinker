@@ -30,7 +30,7 @@ public class Abuser extends Modifier {
 				NebulaTinker.loadResource("abuser").toString()
 		);
 
-		if (hasEffect(entity)) {
+		if (hasEffect(entity) && hasModifier) {
 			event.setAmount(event.getAmount() * 1.5f);
 		}
 	}
