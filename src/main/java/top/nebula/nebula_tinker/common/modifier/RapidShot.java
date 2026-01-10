@@ -20,6 +20,5 @@ public class RapidShot extends Modifier {
 		if (!(entity instanceof LivingEntity || entity instanceof Player player)) {
 			return;
 		}
-
 	}
 }

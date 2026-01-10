@@ -10,6 +10,10 @@ import slimeknights.tconstruct.library.tools.context.ToolAttackContext;
 import slimeknights.tconstruct.library.tools.nbt.IToolStackView;
 
 public class CausalTruncation extends Modifier implements MeleeDamageModifierHook {
+	/**
+	 * 如果通过实现钩子(Hook)来定义modifier的逻辑需要重写此方法来让逻辑生效似乎
+	 * @param builder 构造器
+	 */
 	@Override
 	protected void registerHooks(ModuleHookMap.@NotNull Builder builder) {
 		builder.addHook(this, ModifierHooks.MELEE_DAMAGE);
