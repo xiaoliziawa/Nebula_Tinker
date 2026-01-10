@@ -41,7 +41,7 @@ public class Acupoint extends Modifier {
 				NebulaTinker.loadResource("acupoint").toString()
 		);
 		boolean isBoss = entity.getType().is(Tags.EntityTypes.BOSSES);
-		MutableComponent tranKey = Component.translatable("message.cmi.modifier.acupoint")
+		MutableComponent tranKey = Component.translatable("message.nebula_tinker.modifier.acupoint")
 				.withStyle(ChatFormatting.RED)
 				.withStyle(ChatFormatting.BOLD);
 
