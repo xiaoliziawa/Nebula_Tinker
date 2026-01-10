@@ -116,9 +116,12 @@ repositories {
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     // Nebula Utils
-    jarJar("top.nebula:nebula_utils:1.5.0") {
-        jarJar.ranged(it, '[1.5.0,)')
-    }
+    implementation files("libs/Nebula-Utils-1.5.0.jar")
+    implementation name: 'Nebula-Utils-1.5.0'
+    jarJar(group: "top.nebula", name: "Nebula-Utils", version: "[1.5.0,)")
+//    jarJar("top.nebula:nebula_utils:1.5.0") {
+//        jarJar.ranged(it, '[1.5.0,)')
+//    }
     implementation fg.deobf("top.nebula:nebula_utils:1.5.0")
     // TCon
     implementation fg.deobf("slimeknights.tconstruct:TConstruct:${minecraft_version}-${tinkers_build}")
