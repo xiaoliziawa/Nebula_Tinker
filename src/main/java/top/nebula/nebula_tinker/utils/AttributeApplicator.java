@@ -9,8 +9,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.network.chat.Component;
 import net.minecraft.ChatFormatting;
-import top.nebula.nebula_tinker.common.modifier.DemonizationModifier;
-import top.nebula.nebula_tinker.common.modifier.DivinizationModifier;
+import top.nebula.nebula_tinker.common.modifier.Demonization;
+import top.nebula.nebula_tinker.common.modifier.Divinization;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
@@ -25,7 +25,7 @@ public class AttributeApplicator {
 	/**
 	 * 为实体应用属性
 	 */
-	public static void applyAttributes(LivingEntity entity, List<DemonizationModifier.AttributeEntry> attributes, ItemStack stack, String modifierId) {
+	public static void applyAttributes(LivingEntity entity, List<Demonization.AttributeEntry> attributes, ItemStack stack, String modifierId) {
 		if (entity == null || attributes == null || attributes.isEmpty()) {
 			return;
 		}
@@ -36,7 +36,7 @@ public class AttributeApplicator {
 					return new ConcurrentHashMap<>();
 				});
 
-		for (DemonizationModifier.AttributeEntry entry : attributes) {
+		for (Demonization.AttributeEntry entry : attributes) {
 			AttributeType type = entry.type();
 			double value = entry.value();
 			EquipmentSlot slot = entry.slot();
@@ -204,12 +204,12 @@ public class AttributeApplicator {
 
 		// 获取属性
 		if (hasDemonization) {
-			DemonizationModifier.AttributePack attributes = DemonizationModifier.getOrGenerateAttributes(stack, player);
+			Demonization.AttributePack attributes = Demonization.getOrGenerateAttributes(stack, player);
 
 			// 添加正面属性
 			if (attributes.positive() != null && !attributes.positive().isEmpty()) {
 				tooltips.add(Component.literal("§6§l魔化属性:").withStyle(ChatFormatting.GOLD));
-				for (DemonizationModifier.AttributeEntry entry : attributes.positive()) {
+				for (Demonization.AttributeEntry entry : attributes.positive()) {
 					tooltips.add(Component.literal("  §a" + getAttributeDisplay(entry)).withStyle(ChatFormatting.GREEN));
 				}
 			}
@@ -217,16 +217,16 @@ public class AttributeApplicator {
 			// 添加负面属性
 			if (attributes.negative() != null && !attributes.negative().isEmpty()) {
 				tooltips.add(Component.literal("§c§l负面效果:").withStyle(ChatFormatting.RED));
-				for (DemonizationModifier.AttributeEntry entry : attributes.negative()) {
+				for (Demonization.AttributeEntry entry : attributes.negative()) {
 					tooltips.add(Component.literal("  §c" + getAttributeDisplay(entry)).withStyle(ChatFormatting.RED));
 				}
 			}
 		} else {
-			List<DivinizationModifier.AttributeEntry> attributes = DivinizationModifier.getOrGenerateAttributes(stack, player);
+			List<Divinization.AttributeEntry> attributes = Divinization.getOrGenerateAttributes(stack, player);
 
 			if (!attributes.isEmpty()) {
 				tooltips.add(Component.literal("§b§l神化属性:").withStyle(ChatFormatting.AQUA));
-				for (DivinizationModifier.AttributeEntry entry : attributes) {
+				for (Divinization.AttributeEntry entry : attributes) {
 					tooltips.add(Component.literal("  §b" + getAttributeDisplay(entry)).withStyle(ChatFormatting.AQUA));
 				}
 			}
@@ -238,13 +238,13 @@ public class AttributeApplicator {
 	/**
 	 * 获取属性显示字符串
 	 */
-	private static String getAttributeDisplay(DemonizationModifier.AttributeEntry entry) {
+	private static String getAttributeDisplay(Demonization.AttributeEntry entry) {
 		String displayName = getAttributeDisplayName(entry.type());
 		String formattedValue = formatAttributeValue(entry.type(), entry.value());
 		return String.format("%s §f%s", displayName, formattedValue);
 	}
 
-	private static String getAttributeDisplay(DivinizationModifier.AttributeEntry entry) {
+	private static String getAttributeDisplay(Divinization.AttributeEntry entry) {
 		String displayName = getAttributeDisplayName(entry.type());
 		String formattedValue = formatAttributeValue(entry.type(), entry.value());
 		return String.format("%s §f%s", displayName, formattedValue);

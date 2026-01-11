@@ -34,7 +34,7 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Mod.EventBusSubscriber(modid = NebulaTinker.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
-public class DemonizationModifier extends Modifier {
+public class Demonization extends Modifier {
 	private static final ResourceLocation POSITIVE_ATTRIBUTES_KEY = NebulaTinker.loadResource("demonization_positive");
 	private static final ResourceLocation NEGATIVE_ATTRIBUTES_KEY = NebulaTinker.loadResource("demonization_negative");
 	private static final int MAX_LEVEL = 9;

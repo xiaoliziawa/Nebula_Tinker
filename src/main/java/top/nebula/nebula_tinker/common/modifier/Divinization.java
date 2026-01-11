@@ -34,7 +34,7 @@ import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Mod.EventBusSubscriber(modid = NebulaTinker.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
-public class DivinizationModifier extends Modifier {
+public class Divinization extends Modifier {
 	private static final ResourceLocation ATTRIBUTES_KEY = NebulaTinker.loadResource("divinization_attributes");
 	private static final int MAX_LEVEL = 9;
 	private static final double BASE_MULTIPLIER = 1.0;
@@ -119,9 +119,9 @@ public class DivinizationModifier extends Modifier {
 
 		if (attributes != null && !attributes.isEmpty()) {
 			// 转换AttributeEntry列表为DemonizationModifier.AttributeEntry列表
-			List<DemonizationModifier.AttributeEntry> convertedAttributes = new ArrayList<>();
+			List<Demonization.AttributeEntry> convertedAttributes = new ArrayList<>();
 			for (AttributeEntry entry : attributes) {
-				convertedAttributes.add(new DemonizationModifier.AttributeEntry(
+				convertedAttributes.add(new Demonization.AttributeEntry(
 						entry.type, entry.value, entry.slot
 				));
 			}

@@ -119,7 +119,7 @@ public class ModifierDebugCommand {
 	}
 
 	private static void debugDemonizationAttribute(CommandSourceStack source, ItemStack stack, Player player, String hand) {
-		DemonizationModifier.AttributePack attributes = DemonizationModifier.getOrGenerateAttributes(stack, player);
+		Demonization.AttributePack attributes = Demonization.getOrGenerateAttributes(stack, player);
 
 		source.sendSuccess(() -> {
 			return Component.literal(String.format("%s魔化属性:", hand))
@@ -137,7 +137,7 @@ public class ModifierDebugCommand {
 						.withStyle(ChatFormatting.GREEN);
 			}, false);
 
-			for (DemonizationModifier.AttributeEntry entry : attributes.positive()) {
+			for (Demonization.AttributeEntry entry : attributes.positive()) {
 				String info = String.format(
 						Locale.ROOT,
 						"    %s: %.2f (槽位: %s)",
@@ -163,7 +163,7 @@ public class ModifierDebugCommand {
 						.withStyle(ChatFormatting.RED);
 			}, false);
 
-			for (DemonizationModifier.AttributeEntry entry : attributes.negative()) {
+			for (Demonization.AttributeEntry entry : attributes.negative()) {
 				String info = String.format(
 						Locale.ROOT,
 						"    %s: %.2f (槽位: %s)",
@@ -180,7 +180,7 @@ public class ModifierDebugCommand {
 	}
 
 	private static void debugDivinizationAttribute(CommandSourceStack source, ItemStack stack, Player player, String hand) {
-		List<DivinizationModifier.AttributeEntry> attributes = DivinizationModifier.getOrGenerateAttributes(stack, player);
+		List<Divinization.AttributeEntry> attributes = Divinization.getOrGenerateAttributes(stack, player);
 
 		source.sendSuccess(() -> {
 			return Component.literal(String.format("%s神化属性:", hand))
@@ -193,7 +193,7 @@ public class ModifierDebugCommand {
 						.withStyle(ChatFormatting.GRAY);
 			}, false);
 		} else {
-			for (DivinizationModifier.AttributeEntry entry : attributes) {
+			for (Divinization.AttributeEntry entry : attributes) {
 				String info = String.format(
 						Locale.ROOT,
 						"  %s: %.2f (槽位: %s)",

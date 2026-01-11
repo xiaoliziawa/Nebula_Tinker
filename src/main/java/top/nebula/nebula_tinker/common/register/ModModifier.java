@@ -12,8 +12,8 @@ public class ModModifier {
     public static final StaticModifier<CausalTruncation> CAUSAL_TRUNCATION;
     public static final StaticModifier<RapidShot> RAPID_SHOT;
     public static final StaticModifier<Abuser> ABUSER;
-    public static final StaticModifier<DivinizationModifier> DIVINIZATION;
-    public static final StaticModifier<DemonizationModifier> DEMONIZATION;
+    public static final StaticModifier<Divinization> DIVINIZATION;
+    public static final StaticModifier<Demonization> DEMONIZATION;
 
     static {
         MODIFIERS = ModifierDeferredRegister.create(NebulaTinker.MODID);
@@ -23,7 +23,7 @@ public class ModModifier {
         CAUSAL_TRUNCATION = MODIFIERS.register("causal_truncation", CausalTruncation::new);
         RAPID_SHOT = MODIFIERS.register("rapid_shot", RapidShot::new);
         ABUSER = MODIFIERS.register("abuser", Abuser::new);
-        DIVINIZATION = MODIFIERS.register("divinization", DivinizationModifier::new);
-        DEMONIZATION = MODIFIERS.register("demonization", DemonizationModifier::new);
+        DIVINIZATION = MODIFIERS.register("divinization", Divinization::new);
+        DEMONIZATION = MODIFIERS.register("demonization", Demonization::new);
     }
 }
