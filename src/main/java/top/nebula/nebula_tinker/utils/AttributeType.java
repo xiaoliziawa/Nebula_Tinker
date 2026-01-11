@@ -1,4 +1,4 @@
-package top.nebula.nebula_tinker.common.modifier;
+package top.nebula.nebula_tinker.utils;
 
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.Attribute;
