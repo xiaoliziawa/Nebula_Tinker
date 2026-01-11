@@ -10,6 +10,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import top.nebula.nebula_tinker.common.command.ModifierDebugCommand;
 import top.nebula.nebula_tinker.common.register.ModAttributes;
+import top.nebula.nebula_tinker.common.register.ModCreativeTab;
 import top.nebula.nebula_tinker.common.register.ModItem;
 import top.nebula.nebula_tinker.common.register.ModModifier;
 
@@ -40,6 +41,8 @@ public class NebulaTinker {
 		ModItem.ITEMS.register(bus);
 		// 注册自定义属性
 		ModAttributes.ATTRIBUTES.register(bus);
+		// 标签页注册(一定要在最后)
+		ModCreativeTab.TABS.register(bus);
 
 		LOGGER.info("Nebula Tinker mod initialized!");
 	}

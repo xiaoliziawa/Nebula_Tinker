@@ -2,6 +2,8 @@
 	"item.nebula_tinker.demonization_stone": "魔化石",
 	"item.nebula_tinker.divinization_stone": "神化石",
 
+	"itemGroup.nebula_tinker.tab": "星云工匠",
+
 	"message.nebula_tinker.modifier.acupoint": "死穴效果发动",
 
 	"modifier.nebula_tinker.acupoint": "死穴",

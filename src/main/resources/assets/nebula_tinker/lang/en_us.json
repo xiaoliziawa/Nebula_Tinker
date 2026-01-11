@@ -2,6 +2,8 @@
 	"item.nebula_tinker.demonization_stone": "Demonization Stone",
 	"item.nebula_tinker.divinization_stone": "Divinization Stone",
 
+	"itemGroup.nebula_tinker.tab": "Nebula Tinker",
+
 	"message.nebula_tinker.modifier.acupoint": "Deadly Acupoint activated",
 
 	"modifier.nebula_tinker.acupoint": "Deadly Acupoint",
