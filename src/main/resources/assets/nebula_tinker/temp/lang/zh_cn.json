@@ -6,6 +6,10 @@
 
 	"message.nebula_tinker.modifier.acupoint": "死穴效果发动",
 
+	"modifier.nebula_tinker.death_echo": "生命回响",
+	"modifier.nebula_tinker.death_echo.flavor": "战斗到底! ",
+	"modifier.nebula_tinker.death_echo.description": "当血量低于35%时攻击有15%的概率直接暴击",
+
 	"modifier.nebula_tinker.acupoint": "死穴",
 	"modifier.nebula_tinker.acupoint.flavor": "你已进入斩杀线！",
 	"modifier.nebula_tinker.acupoint.description": "怪物血量低于25%时有概率直接斩杀 (BOSS为12.5%)",

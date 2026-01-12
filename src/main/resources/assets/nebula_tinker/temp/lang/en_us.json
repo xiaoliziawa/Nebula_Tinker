@@ -6,6 +6,10 @@
 
 	"message.nebula_tinker.modifier.acupoint": "Deadly Acupoint activated",
 
+	"modifier.nebula_tinker.death_echo": "Death Echo",
+	"modifier.nebula_tinker.death_echo.flavor": "Fight to the end!",
+	"modifier.nebula_tinker.death_echo.description": "When HP is less than 35%, attacks have a 15% chance to be critical directly.",
+
 	"modifier.nebula_tinker.acupoint": "Deadly Acupoint",
 	"modifier.nebula_tinker.acupoint.flavor": "You're in the kill zone!",
 	"modifier.nebula_tinker.acupoint.description": "Chance to instantly kill enemies below 25% health (12.5% for BOSS)",
