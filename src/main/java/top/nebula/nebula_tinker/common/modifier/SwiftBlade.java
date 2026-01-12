@@ -27,6 +27,11 @@ public class SwiftBlade extends Modifier {
     public static void onCriticalHit(CriticalHitEvent event) {
         Player player = event.getEntity();
 
+        // 攻击冷却检查，防止粒子小姑以及音效连续触发
+        if (player.getAttackStrengthScale(0.5F) < 0.9F) {
+            return;
+        }
+
         // 检查玩家主手武器是否有此修饰符
         boolean hasModifier = SimpleTConUtils.hasModifier(
                 player.getItemInHand(InteractionHand.MAIN_HAND),

@@ -116,11 +116,11 @@ repositories {
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     // Jade
-    implementation fg.deobf("curse.maven:jade-324717:6106101")
+    runtimeOnly fg.deobf("curse.maven:jade-324717:6106101")
     // 血条
-    implementation fg.deobf("curse.maven:tslatentitystatus-tes-830420:7126708")
+    runtimeOnly fg.deobf("curse.maven:tslatentitystatus-tes-830420:7126708")
     // 假人依赖
-    implementation fg.deobf("curse.maven:powerful-dummy-1276893:6956104")
+    runtimeOnly fg.deobf("curse.maven:powerful-dummy-1276893:6956104")
     // TCon
     implementation fg.deobf("slimeknights.tconstruct:TConstruct:${minecraft_version}-${tinkers_build}")
     // Mantle
