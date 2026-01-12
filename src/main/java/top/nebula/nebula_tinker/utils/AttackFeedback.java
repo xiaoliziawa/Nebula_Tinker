@@ -1,10 +1,11 @@
 package top.nebula.nebula_tinker.utils;
 
-import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.phys.Vec3;
+import top.nebula.nebula_tinker.common.register.ModParticle;
 
 public class AttackFeedback {
 	/**
@@ -17,18 +18,26 @@ public class AttackFeedback {
 			return;
 		}
 
+		// 玩家视线方向
+		Vec3 look = player.getLookAngle();
+		double distance = 1.2;
+
+		// 粒子生成位置：眼前
+		double x = player.getX() + look.x * distance;
+		double y = player.getEyeY() - 0.1;
+		double z = player.getZ() + look.z * distance;
+
 		level.sendParticles(
-				ParticleTypes.SWEEP_ATTACK,
-				player.getX(),
-				player.getY() + player.getBbHeight() * 0.5,
-				player.getZ(),
-				3,
-				0.5,
-				0.2,
-				0.5,
+				ModParticle.CROSS_CHOP.get(),
+				x,
+				y,
+				z,
+				1,
+				0.0,
+				0.0,
+				0.0,
 				0.0
 		);
-
 		level.playSound(
 				null,
 				player.blockPosition(),

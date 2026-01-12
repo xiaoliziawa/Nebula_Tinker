@@ -40,6 +40,8 @@ public class NebulaTinker {
 		ModItem.ITEMS.register(bus);
 		// 注册自定义属性
 		ModAttributes.ATTRIBUTES.register(bus);
+		// 粒子效果
+		ModParticle.PARTICLE_TYPES.register(bus);
 		// 标签页注册(一定要在最后)
 		ModCreativeTab.TABS.register(bus);
 		// 普通配置文件

@@ -139,7 +139,7 @@ public class LanguageGenerate {
 				"modifier",
 				"abuser.description",
 				"Deal 50% more damage to poisoned, withered or bleeding targets",
-				"对中毒、凋零或流血的目标造成额外50%伤害"
+				"如果目标身上有中毒、凋零或流血的效果，攻击时必定造成暴击"
 		);
 		addLanguage(
 				"modifier",
