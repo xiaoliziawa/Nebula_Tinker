@@ -1,9 +1,5 @@
 package top.nebula.nebula_tinker.common.modifier;
 
-import net.minecraft.core.particles.ParticleTypes;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.player.Player;
@@ -13,6 +9,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import slimeknights.tconstruct.library.modifiers.Modifier;
 import top.nebula.nebula_tinker.NebulaTinker;
+import top.nebula.nebula_tinker.common.register.ModModifier;
 import top.nebula.nebula_tinker.utils.AttackFeedback;
 import top.nebula.nebula_tinker.utils.SimpleTConUtils;
 

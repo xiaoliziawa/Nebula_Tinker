@@ -34,12 +34,16 @@ public class SimpleTConUtils {
 		return new ModifierId(id);
 	}
 
-	public static boolean hasModifier(ItemStack stack, String id) {
-		return ModifierUtil.getModifierLevel(stack, new ModifierId(id)) > 0;
+	public static boolean hasModifier(ItemStack stack, String modifier) {
+		return ModifierUtil.getModifierLevel(stack, new ModifierId(modifier)) > 0;
 	}
 
-	public static int getModifierLevel(ItemStack stack, String id) {
-		return ModifierUtil.getModifierLevel(stack, new ModifierId(id));
+	public static int getModifierLevel(ItemStack stack, String modifier) {
+		return ModifierUtil.getModifierLevel(stack, new ModifierId(modifier));
+	}
+
+	public static int getModifierLevel(ItemStack stack, ModifierId modifier) {
+		return ModifierUtil.getModifierLevel(stack, modifier);
 	}
 
 	public static ModifierEntry getModifierEntry(Modifier modifier, int level) {

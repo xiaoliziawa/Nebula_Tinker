@@ -19,6 +19,7 @@ public class ModModifier {
 	public static final StaticModifier<Demonization> DEMONIZATION;
 	public static final StaticModifier<SwiftBlade> SWIFT_BLADE;
 	public static final StaticModifier<DeathEcho> DEATH_ECHO;
+	public static final StaticModifier<CaptureKing> CAPTURE_KING;
 
 	static {
 		MODIFIERS = ModifierDeferredRegister.create(NebulaTinker.MODID);
@@ -31,5 +32,6 @@ public class ModModifier {
 		DEMONIZATION = MODIFIERS.register("demonization", Demonization::new);
 		SWIFT_BLADE = MODIFIERS.register("swift_blade", SwiftBlade::new);
 		DEATH_ECHO = MODIFIERS.register("death_echo", DeathEcho::new);
+		CAPTURE_KING = MODIFIERS.register("capture_king", CaptureKing::new);
 	}
 }
