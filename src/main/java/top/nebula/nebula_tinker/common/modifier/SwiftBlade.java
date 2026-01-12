@@ -53,13 +53,11 @@ public class SwiftBlade extends Modifier {
 		int speedLevel = player.getEffect(MobEffects.MOVEMENT_SPEED).getAmplifier() + 1;
 
 		// 设置暴击
+		AttackFeedback.spawnAbuserCritEffect(player);
 		event.setResult(Event.Result.ALLOW);
 
 		// 计算暴击伤害倍率：基础倍率 + 速度等级加成
 		float critMultiplier = BASE_CRIT_MULTIPLIER + (speedLevel * CRIT_BONUS_PER_SPEED_LEVEL);
 		event.setDamageModifier(critMultiplier);
-
-		// 生成反馈
-		AttackFeedback.spawnAbuserCritEffect(player);
 	}
 }

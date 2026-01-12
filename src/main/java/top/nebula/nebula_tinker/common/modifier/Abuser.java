@@ -51,10 +51,9 @@ public class Abuser extends Modifier {
 		}
 
 		// 强制暴击
+		AttackFeedback.spawnAbuserCritEffect(player);
 		event.setResult(Event.Result.ALLOW);
 		event.setDamageModifier(CRIT_MULTIPLIER);
-
-		AttackFeedback.spawnAbuserCritEffect(player);
 	}
 
 	/**

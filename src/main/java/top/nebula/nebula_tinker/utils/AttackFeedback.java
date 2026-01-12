@@ -5,6 +5,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.level.Level;
 
 public class AttackFeedback {
 	/**
@@ -18,24 +19,24 @@ public class AttackFeedback {
 		}
 
 		level.sendParticles(
-				ParticleTypes.CRIT,
+				ParticleTypes.SWEEP_ATTACK,
 				player.getX(),
 				player.getY() + player.getBbHeight() * 0.5,
 				player.getZ(),
-				6,
-				0.4,
+				3,
+				0.5,
 				0.2,
-				0.4,
+				0.5,
 				0.0
 		);
 
 		level.playSound(
 				null,
 				player.blockPosition(),
-				SoundEvents.PLAYER_ATTACK_CRIT,
+				SoundEvents.PLAYER_ATTACK_SWEEP,
 				SoundSource.PLAYERS,
 				1.0F,
-				1.2F
+				1.5F
 		);
 	}
 }

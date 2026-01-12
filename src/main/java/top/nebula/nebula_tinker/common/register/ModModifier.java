@@ -5,6 +5,10 @@ import slimeknights.tconstruct.library.modifiers.util.StaticModifier;
 import top.nebula.nebula_tinker.NebulaTinker;
 import top.nebula.nebula_tinker.common.modifier.*;
 
+/**
+ * 由于暂时没空写Json, 因此在这里写一下一些注意事项, 到时候写Json时避免忘记
+ * 每个强化的暴击效果不可叠加, 例如施虐者和迅捷之刃不能叠加
+ */
 public class ModModifier {
     public static final ModifierDeferredRegister MODIFIERS;
     public static final StaticModifier<Acupoint> ACUPOINT;
