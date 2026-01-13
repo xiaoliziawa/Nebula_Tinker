@@ -20,7 +20,7 @@ versionRange = "${minecraft_version_range}"
 ordering = "NONE"
 side = "BOTH"
 [[dependencies."${mod_id}"]]
-modId = "minecraft"
+modId = "tconstruct"
 mandatory = true
 versionRange = "[(3.11.1.158,]"
 ordering = "NONE"
