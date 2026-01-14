@@ -10,7 +10,9 @@ import java.util.Random;
 public class CurseOfTheWarGod extends MobEffect {
 	private static final String LAST_HEALTH_KEY = "nebula:last_health";
 	private static final Random RANDOM = new Random();
+	// 触发概率
 	private static final double PROBABILITY_OF_INJURY = 0.5;
+	// 受到的伤害百分比
 	private static final double PERCENTAGE_OF_DAMAGE = 0.75;
 
 	public CurseOfTheWarGod() {
