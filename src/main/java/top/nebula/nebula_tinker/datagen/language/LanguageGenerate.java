@@ -34,6 +34,30 @@ public class LanguageGenerate {
 				"<死穴>效果发动"
 		);
 		addLanguage(
+				"message",
+				"modifier.capture_king",
+				"Capture King activated",
+				"<擒王>效果发动"
+		);
+		addLanguage(
+				"modifier",
+				"capture_king",
+				"Capture King",
+				"擒王"
+		);
+		addLanguage(
+				"modifier",
+				"capture_king.flavor",
+				"King and King's Fight",
+				"王与王的战斗! "
+		);
+		addLanguage(
+				"modifier",
+				"capture_king.description",
+				"When attacking, the probability will directly cause a critical strike to the BOSS. The higher the level, the higher the critical strike rate.",
+				"攻击时概率对BOSS直接造成暴击, 等级越高暴击率越高"
+		);
+		addLanguage(
 				"modifier",
 				"death_echo",
 				"Death Echo",

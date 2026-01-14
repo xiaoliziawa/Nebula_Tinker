@@ -323,8 +323,7 @@ public class ModifierDebugCommand {
 			String modifierName
 	) {
 		if (SimpleTConUtils.hasModifier(stack, NebulaTinker.loadResource(modifierId).toString())) {
-			int level = SimpleTConUtils.getModifierLevel(
-					stack, NebulaTinker.loadResource(modifierId).toString());
+			int level = SimpleTConUtils.getModifierLevel(stack, NebulaTinker.loadResource(modifierId));
 
 			source.sendSuccess(() -> {
 				return Component.translatable("command.nebula_tinker.check_hands.has_modifier", hand, modifierName, level)

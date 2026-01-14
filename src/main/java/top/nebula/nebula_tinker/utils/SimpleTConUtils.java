@@ -39,11 +39,11 @@ public class SimpleTConUtils {
 	}
 
 	public static int getModifierLevel(ItemStack stack, String modifier) {
-		return ModifierUtil.getModifierLevel(stack, new ModifierId(modifier));
+		return ToolStack.from(stack).getModifierLevel(new ModifierId(modifier));
 	}
 
-	public static int getModifierLevel(ItemStack stack, ModifierId modifier) {
-		return ModifierUtil.getModifierLevel(stack, modifier);
+	public static int getModifierLevel(ItemStack stack, ResourceLocation modifier) {
+		return ToolStack.from(stack).getModifierLevel(new ModifierId(modifier));
 	}
 
 	public static ModifierEntry getModifierEntry(Modifier modifier, int level) {
