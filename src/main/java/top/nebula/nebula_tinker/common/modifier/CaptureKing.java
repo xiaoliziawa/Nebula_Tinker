@@ -51,6 +51,8 @@ public class CaptureKing extends Modifier {
 				NebulaTinker.loadResource("capture_king").toString()
 		);
 
+		boolean isBoss = entity.getType().is(Tags.EntityTypes.BOSSES);
+
 		if (level <= 0) {
 			return;
 		}
@@ -64,7 +66,7 @@ public class CaptureKing extends Modifier {
 		}
 
 		// 只对 BOSS 生效
-		if (!entity.getType().is(Tags.EntityTypes.BOSSES) && hasModfier) {
+		if (!isBoss && hasModfier) {
 			return;
 		}
 
