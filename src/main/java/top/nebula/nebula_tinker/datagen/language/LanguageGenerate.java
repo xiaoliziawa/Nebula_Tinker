@@ -186,7 +186,7 @@ public class LanguageGenerate {
 		addLanguage(
 				"modifier",
 				"rapid_shot.description",
-				"Increase ranged weapon firing speed and accuracy",
+				"Converging arrow trajectory of bows with Multishot",
 				"收束带有多重射击强化的箭矢散布"
 		);
 		addLanguage(
