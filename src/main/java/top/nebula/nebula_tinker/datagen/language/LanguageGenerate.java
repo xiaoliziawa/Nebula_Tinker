@@ -187,7 +187,7 @@ public class LanguageGenerate {
 				"modifier",
 				"rapid_shot.description",
 				"Converging arrow trajectory of bows with Multishot",
-				"收束带有多重射击强化的箭矢散布"
+				"收束带有\"多重射击\"强化的箭矢散布"
 		);
 		addLanguage(
 				"modifier",
